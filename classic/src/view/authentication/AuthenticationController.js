@@ -8,8 +8,10 @@ Ext.define('Admin.view.authentication.AuthenticationController', {
         this.redirectTo('dashboard', true);
     },
 
-    onLoginButton: function() {
-        this.redirectTo('dashboard', true);
+    onLoginButton: function(me, e, eOpts) {
+       var user =  me.up('form').getForm().getFieldValues();
+        if(user.userid == '1'&&user.password == '1')
+            this.redirectTo('dashboard', true);
     },
 
     onLoginAsButton: function() {

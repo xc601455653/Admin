@@ -1,2 +1,2 @@
 // @tag full-page
-// @require F:\Ext-area\candy-admin\app.js
+// @require C:\Users\Administrator\Admin\app.js

@@ -10,7 +10,7 @@ Ext.define('Admin.view.authentication.Register', {
         'Ext.form.field.Text'
     ],
 
-    title: 'User Registration',
+    title: '倔强的糖果后台注册',
     defaultFocus: 'authdialog',  // Focus the Auth Form to force field focus as well
 
     items: [
@@ -35,7 +35,7 @@ Ext.define('Admin.view.authentication.Register', {
                 {
                     xtype: 'label',
                     cls: 'lock-screen-top-label',
-                    text: 'Create an account'
+                    text: '创建账户'
                 },
                 {
                     xtype: 'textfield',
@@ -43,7 +43,7 @@ Ext.define('Admin.view.authentication.Register', {
                     height: 55,
                     hideLabel: true,
                     allowBlank : false,
-                    emptyText: 'Fullname',
+                    emptyText: '用户全称',
                     name: 'fullName',
                     bind: '{fullName}',
                     triggers: {
@@ -60,7 +60,7 @@ Ext.define('Admin.view.authentication.Register', {
                     allowBlank : false,
                     name: 'userid',
                     bind: '{userid}',
-                    emptyText: 'Username',
+                    emptyText: '用户名',
                     triggers: {
                         glyphed: {
                             cls: 'trigger-glyph-noop auth-email-trigger'
@@ -74,7 +74,7 @@ Ext.define('Admin.view.authentication.Register', {
                     hideLabel: true,
                     allowBlank : false,
                     name: 'email',
-                    emptyText: 'user@example.com',
+                    emptyText: '电子邮箱',
                     vtype: 'email',
                     bind: '{email}',
                     triggers: {
@@ -89,7 +89,7 @@ Ext.define('Admin.view.authentication.Register', {
                     height: 55,
                     hideLabel: true,
                     allowBlank : false,
-                    emptyText: 'Password',
+                    emptyText: '密码',
                     name: 'password',
                     inputType: 'password',
                     bind: '{password}',
@@ -107,7 +107,7 @@ Ext.define('Admin.view.authentication.Register', {
                     height: 32,
                     bind: '{agrees}',
                     allowBlank : false,
-                    boxLabel: 'I agree with the Terms and Conditions',
+                    boxLabel: '本人同意有关条款及规定!',
 
                     // In this case, the form operation is not VALID unless Terms are agreed upon
                     isValid: function() {
@@ -125,7 +125,7 @@ Ext.define('Admin.view.authentication.Register', {
                     margin: '5 0',
                     iconAlign: 'right',
                     iconCls: 'x-fa fa-angle-right',
-                    text: 'Signup',
+                    text: '注册',
                     listeners: {
                         click: 'onSignupClick'
                     }
@@ -140,8 +140,8 @@ Ext.define('Admin.view.authentication.Register', {
                     ui: 'facebook',
                     margin: '5 0',
                     iconAlign: 'right',
-                    iconCls: 'x-fa fa-facebook',
-                    text: 'Login with Facebook',
+                    iconCls: 'x-fa fa-weixin',
+                    text: '微信登录',
                     listeners: {
                         click: 'onFaceBookLogin'
                     }
@@ -150,7 +150,7 @@ Ext.define('Admin.view.authentication.Register', {
                     xtype: 'component',
                     html: '<div style="text-align:right">' +
                         '<a href="#login" class="link-forgot-password">'+
-                            'Back to Log In</a>' +
+                            '返回登录页</a>' +
                         '</div>'
                 }
             ]

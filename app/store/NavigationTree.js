@@ -12,16 +12,16 @@ Ext.define('Admin.store.NavigationTree', {
         children: [
             {
                 text: 'Dashboard',
-                iconCls: 'x-fa fa-desktop',
-                rowCls: 'nav-tree-badge nav-tree-badge-new',
+                iconCls: 'x-fa fa-desktop new-icon',
+                //rowCls: 'nav-tree-badge nav-tree-badge-new',
                 viewType: 'admindashboard',
                 routeId: 'dashboard', // routeId defaults to viewType
                 leaf: true
             },
             {
                 text: 'Email',
-                iconCls: 'x-fa fa-send',
-                rowCls: 'nav-tree-badge nav-tree-badge-hot',
+                iconCls: 'x-fa fa-send hot-icon',
+                //rowCls: 'nav-tree-badge nav-tree-badge-hot',
                 viewType: 'email',
                 leaf: true
             },

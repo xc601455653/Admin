@@ -14,6 +14,13 @@ Ext.define('Admin.Application', {
     //
     mainView: 'Admin.view.main.Main',
 
+    init: function(){
+        console.log(this.getApplication().getName());
+        //arguments.callee(arguments);
+    },
+    launch: function () {
+        console.log(111);
+    },
     onAppUpdate: function () {
         Ext.Msg.confirm('Application Update', 'This application has an update, reload?',
             function (choice) {

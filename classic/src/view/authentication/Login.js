@@ -10,7 +10,7 @@ Ext.define('Admin.view.authentication.Login', {
         'Ext.button.Button'
     ],
 
-    title: 'Let\'s Log In',
+    title: '倔强的糖果后台管理平台',
     defaultFocus: 'authdialog', // Focus the Auth Form to force field focus as well
 
     items: [
@@ -34,7 +34,7 @@ Ext.define('Admin.view.authentication.Login', {
             items: [
                 {
                     xtype: 'label',
-                    text: 'Sign into your account'
+                    text: '请输入您的账号信息'
                 },
                 {
                     xtype: 'textfield',
@@ -44,7 +44,7 @@ Ext.define('Admin.view.authentication.Login', {
                     height: 55,
                     hideLabel: true,
                     allowBlank : false,
-                    emptyText: 'user id',
+                    emptyText: '用户名',
                     triggers: {
                         glyphed: {
                             cls: 'trigger-glyph-noop auth-email-trigger'
@@ -56,7 +56,7 @@ Ext.define('Admin.view.authentication.Login', {
                     cls: 'auth-textbox',
                     height: 55,
                     hideLabel: true,
-                    emptyText: 'Password',
+                    emptyText: '登录密码',
                     inputType: 'password',
                     name: 'password',
                     bind: '{password}',
@@ -77,11 +77,11 @@ Ext.define('Admin.view.authentication.Login', {
                             cls: 'form-panel-font-color rememberMeCheckbox',
                             height: 30,
                             bind: '{persist}',
-                            boxLabel: 'Remember me'
+                            boxLabel: '记住我'
                         },
                         {
                             xtype: 'box',
-                            html: '<a href="#passwordreset" class="link-forgot-password"> Forgot Password ?</a>'
+                            html: '<a href="#passwordreset" class="link-forgot-password"> 忘记密码 ?</a>'
                         }
                     ]
                 },
@@ -92,7 +92,7 @@ Ext.define('Admin.view.authentication.Login', {
                     ui: 'soft-green',
                     iconAlign: 'right',
                     iconCls: 'x-fa fa-angle-right',
-                    text: 'Login',
+                    text: '登录',
                     formBind: true,
                     listeners: {
                         click: 'onLoginButton'
@@ -108,8 +108,8 @@ Ext.define('Admin.view.authentication.Login', {
                     scale: 'large',
                     ui: 'facebook',
                     iconAlign: 'right',
-                    iconCls: 'x-fa fa-facebook',
-                    text: 'Login with Facebook',
+                    iconCls: 'x-fa fa-weixin',
+                    text: '微信登录',
                     listeners: {
                         click: 'onFaceBookLogin'
                     }
@@ -125,7 +125,7 @@ Ext.define('Admin.view.authentication.Login', {
                     ui: 'gray',
                     iconAlign: 'right',
                     iconCls: 'x-fa fa-user-plus',
-                    text: 'Create Account',
+                    text: '创建一个新账户',
                     listeners: {
                         click: 'onNewAccount'
                     }

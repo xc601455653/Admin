@@ -11,7 +11,7 @@ Ext.define('Admin.view.authentication.LockScreen', {
         'Ext.layout.container.VBox'
     ],
 
-    title: 'Session Expired',
+    title: '当前会话已经过期,请重新输入密码!',
 
     defaultFocus : 'authdialog',  // Focus the Auth Form to force field focus as well
 

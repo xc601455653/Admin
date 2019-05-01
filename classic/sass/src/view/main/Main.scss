@@ -144,11 +144,11 @@
 }
 .hot-icon,.new-icon{
     &.hot-icon:after{
-        content: "HOT";
+        content: "热";
         background:#e3495a;
     }
     &.new-icon:after{
-        content: "NEW";
+        content: "新";
         background:$base-color;
     }
     &:after{

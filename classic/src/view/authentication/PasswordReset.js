@@ -9,7 +9,7 @@ Ext.define('Admin.view.authentication.PasswordReset', {
         'Ext.button.Button'
     ],
 
-    title: 'Reset Password',
+    title: '重置密码',
 
     defaultFocus : 'authdialog',  // Focus the Auth Form to force field focus as well
 
@@ -34,7 +34,7 @@ Ext.define('Admin.view.authentication.PasswordReset', {
                 {
                     xtype: 'label',
                     cls: 'lock-screen-top-label',
-                    text: 'Enter your email address for further reset instructions'
+                    text: '请输入您的邮箱来获取重置密码的操作指示!'
                 },
                 {
                     xtype: 'textfield',
@@ -43,7 +43,7 @@ Ext.define('Admin.view.authentication.PasswordReset', {
                     name: 'email',
                     hideLabel: true,
                     allowBlank: false,
-                    emptyText: 'user@example.com',
+                    emptyText: '请输入电子邮箱',
                     vtype: 'email',
                     triggers: {
                         glyphed: {
@@ -59,7 +59,7 @@ Ext.define('Admin.view.authentication.PasswordReset', {
                     formBind: true,
                     iconAlign: 'right',
                     iconCls: 'x-fa fa-angle-right',
-                    text: 'Reset Password',
+                    text: '重置密码',
                     listeners: {
                         click: 'onResetClick'
                     }
@@ -68,7 +68,7 @@ Ext.define('Admin.view.authentication.PasswordReset', {
                     xtype: 'component',
                     html: '<div style="text-align:right">' +
                         '<a href="#login" class="link-forgot-password">'+
-                            'Back to Log In</a>' +
+                            '返回登录页</a>' +
                         '</div>'
                 }
             ]
